@@ -126,3 +126,38 @@ form .btnload{
     color:#718096 ;
     border-bottom: 2px solid #8694a8;
 }
+
+
+.sidebar{
+    position: sticky;
+    top: 0;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+            'top-button'
+            'buttom-button';
+    flex-direction: column;
+    width: 250px;
+    height: 50vh;
+    border: 1px solid #ccc;
+}
+.top-button{
+    grid-area: top-button;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.top-button Button{
+    margin-bottom: 15px;
+}
+.bottom-button Button{
+    margin-bottom: 15px;
+}
+.bottom-button{
+    grid-area: buttom-button;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 30px;
+}
